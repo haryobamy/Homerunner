@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 import login from '../assests/img/login.jpg';
 import { MDBBtn, MDBCol, MDBIcon } from "mdbreact";
+import avatar from '../assests/img/avatar.jpg';
 
 import Navbar from './Navbar'
 
@@ -37,14 +39,26 @@ class Login extends Component {
     render() { 
         return (
         <>
-        <Navbar />
+        
             <LoginWrapper >
             <div className="container px-4 py-5 mx-auto">
-    <div className="card card0">
+    <div className="card card0 overlay">
         <div className="d-flex flex-lg-row flex-column">
-            <div className="card card1"  style={{
+            <div className="card card1 "  style={{
             backgroundImage: `url(${login}) `,height:'auto'
           }}>
+              <div className='text-white justify-content-center my-5 navbar-brand'>
+              <Link to='/'>
+                    <img src={avatar}
+                     alt='logo'
+                     height={20}
+                     width={150}
+                     />
+                </Link>
+                <span>
+                |   Future For Living
+                </span>
+                     </div>
               
                 <div className="my-auto mx-md-5 px-md-5 left">
                     <h3 className="text-white"> <span className='font-weight-bold'>"</span> With homerunner, i was able to access a number of professional service provider with a short period of time. Their service was impecable</h3>
@@ -52,6 +66,13 @@ class Login extends Component {
             </div>
                 
             <div className="card card2">
+
+            <Link to='/sign-up' className='ml-auto text-success'>
+                Don't have an account?
+                       <span className='font-weight-bold'>Register in here</span>
+                       
+                </Link>
+
                 <form>
                 <div className="row justify-content-center my-auto">
                     <div className="col-md-8 col-10 my-5">
@@ -66,7 +87,9 @@ class Login extends Component {
             <div class="remember"> <label class="option text-muted"> Remember me <input type="checkbox" name="checkbox"/> <span class="checkmark"></span> </label> </div>
             <div class="ml-auto"> <a href="#" id="forgot">Forgot Password?</a> </div>
             </div>
-                        <div className="row justify-content-center my-5 px-3"> <button className="btn-block btn-color">Login</button> </div>
+                        <div className="row justify-content-center my-5 px-3">
+                             <button className="btn-block btn-blue">Login</button>
+                              </div>
                         <div className="row justify-content-center my-3 px-3"><button>
                         <MDBBtn size="md" color="indigo" >Login With Your Facebook<MDBIcon fab icon="mdb" /></MDBBtn>
                         </button>
@@ -121,6 +144,7 @@ textarea:focus {
     font-weight: 400
 }
 
+
 button:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
@@ -130,7 +154,9 @@ button:focus {
 
 .card {
     border-radius: 0;
-    border: none
+    border: none;
+    width:100%;
+    height:100%;
 }
 
 .card2{
@@ -142,6 +168,16 @@ button:focus {
     width: 100%;
     background-image: linear-gradient(to right, #FFD54F, #D500F9)
 }
+
+// .overlay {
+//     position: absolute;
+//     top: 0;
+//     left: 0;
+//     height: 100%;
+//     width: 100%;
+//     z-index: 10;
+//     background-color: rgba(0, 0, 0, 0.6);
+//   }
 
 
 .heading {
@@ -171,16 +207,22 @@ button:focus {
     margin-bottom: 30px
     color:green !important
 }
-
-.btn-color {
-    border-radius: 50px;
-    color: #fff;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9);
-    padding: 15px;
-    cursor: pointer;
-    border: none !important;
-    margin-top: 40px
+.btn-blue{
+    color:#fff;
+    border-radius: 5px;
+    background-color: #1f3251;
+    height: 50px;
+    width:70%;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.19;
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+    margin: 30px 15% 30px 15%
 }
+
+
 
 .btn-color:hover {
     color: #fff;
@@ -218,7 +260,7 @@ a:hover {
     font-size: 15px
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 1200px) {
     .card1 {
         width: 100%;
         padding: 40px 30px 10px 30px

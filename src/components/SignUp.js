@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
 import login from '../assests/img/login.jpg';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import styled from 'styled-components'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
+import avatar from '../assests/img/avatar.jpg';
 
 
 
@@ -18,12 +20,32 @@ class SignUp extends Component {
             <div className="card card1"  style={{
             backgroundImage: `url(${login}) `,height:'auto'
           }}>
+
+            <div className='text-white justify-content-center my-5 mx-5 navbar-brand'>
+              <Link to='/'>
+                    <img src={avatar}
+                     alt='logo'
+                     height={20}
+                     width={150}
+                     />
+                </Link>
+                <span>
+                |   Future For Living
+                </span>
+                     </div>
+
                 <div className="my-auto mx-md-5 px-md-5 left">
                     <h3 className="text-white"> <span className='font-weight-bold'>"</span> With homerunner, i was able to access a number of professional service provider with a short period of time. Their service was impecable</h3>
                 </div>
             </div>
                 
             <div className="card card2">
+
+            <Link to='/sign-up' className='ml-auto text-success'>
+                Don't have an account?
+                       <span className='font-weight-bold'>Register in here</span>
+                       
+                </Link>
                 
                 <div className="row justify-content-center my-auto">
                     <div className="col-md-8 col-10 my-5">
@@ -68,7 +90,9 @@ class SignUp extends Component {
                     <input type="text" maxLength='11' className="form-control" placeholder="Phone Number"required />
                 </div>
 
-                <button type="submit" className="btn btn-dark btn-lg btn-block my-5">Contiue</button>
+                
+
+                <button type="submit" className="btn btn-blue btn-lg btn-block">Contiue</button>
             </form>
             
                         
@@ -142,6 +166,20 @@ button:focus {
     background-image: linear-gradient(to right, #FFD54F, #D500F9)
 }
 
+.btn-blue{
+    color:#fff;
+    border-radius: 5px;
+    background-color: #1f3251;
+    height: 50px;
+    width: 70%;
+    font-family: Montserrat;
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 1.19;
+    padding-left: 1.5rem!important;
+    padding-right: 1.5rem!important;
+    margin: 30px 0 0 15%
+}
 
 .heading {
     margin-bottom: 60px !important
