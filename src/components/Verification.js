@@ -4,10 +4,18 @@ import styled from 'styled-components';
 import login from '../assests/img/login.jpg';
 import {Link} from 'react-router-dom';
 import avatar from '../assests/img/avatar.jpg';
+import ReactCodeInput from 'react-verification-code-input';
 
 
 class Verification  extends Component {
     state = {  }
+
+
+
+
+
+
+    
     render() { 
         return (
 
@@ -39,18 +47,24 @@ class Verification  extends Component {
             </div>
                 
             <div className="card card2">
+
+            <Link to='/sign-up' className='ml-auto text-success my-5'>
+                Don't have an account?
+                       <span className='font-weight-bold'>Register in here</span>
+                       
+                </Link>
                 <form>
                 <div className="row justify-content-center my-auto">
                     <div className="col-md-8 col-10 my-5">
                     <div className="row justify-content-center px-3 mb-3"> </div>
-                        <h3 className=" text-left text-success heading font-weight-bold">Hello, welcome back!</h3>
+                        <h3 className=" text-left text-success heading">Verification</h3>
 
                         <div id="wrapper">
   <div id="dialog">
-    <h6>Please enter the 4-digit verification code we sent via SMS:</h6git >
+    <h6 className='text-success'>Please enter the 4-digit code sent to your Phone</h6>
     <div id="form">
-      <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
-      <input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" /><input type="text" maxLength="1" size="1" min="0" max="9" pattern="[0-9]{1}" />
+        < ReactCodeInput type='number' fields={4}/>
+
       <button className="btn btn-blue btn-embossed mx-5 my-5">Continue</button>
     </div>
   </div>
@@ -72,9 +86,17 @@ class Verification  extends Component {
             </VerificationWrapper>
           );
     }
+
+
 }
 
 const VerificationWrapper = styled.div`
+
+.styles_react-code-input__CRulA {
+    display: flex;
+    margin: 3rem 0 0 2.5rem;
+}
+
 input {
     margin: 0 5px;
     text-align: center;
@@ -99,7 +121,10 @@ input {
 
   .card {
     border-radius: 0;
-    border: none
+    border: none;
+    dispaly:flex;
+    width:100%;
+    
 }
 
 .btn-blue{
@@ -117,6 +142,8 @@ input {
     
 }
 
+
+
 .card2{
     width: 100%;
     padding: 40px 30px 10px 30px
@@ -127,6 +154,7 @@ input {
     width: 100%;
     background-image: linear-gradient(to right, #FFD54F, #D500F9);
     height:100%;
+    display:flex;
 }
 
 `

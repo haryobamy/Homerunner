@@ -47,8 +47,8 @@ class Login extends Component {
             <div className="card card1 "  style={{
             backgroundImage: `url(${login}) `,height:'auto'
           }}>
-              <div className='text-white justify-content-center my-5 navbar-brand'>
-              <Link to='/'>
+              <div className='text-white justify-content-center my-5 mx-5 navbar-brand'>
+              <Link to='www.homerunner.ng'>
                     <img src={avatar}
                      alt='logo'
                      height={20}
@@ -67,7 +67,7 @@ class Login extends Component {
                 
             <div className="card card2">
 
-            <Link to='/sign-up' className='ml-auto text-success'>
+            <Link to='/sign-up' className='ml-auto text-success my-3'>
                 Don't have an account?
                        <span className='font-weight-bold'>Register in here</span>
                        
@@ -166,7 +166,8 @@ button:focus {
 
 .card1 {
     width: 100%;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9)
+    background-color: green;
+
 }
 
 // .overlay {

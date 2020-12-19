@@ -43,7 +43,7 @@ class SignUp extends Component {
 
             <Link to='/sign-up' className='ml-auto text-success'>
                 Don't have an account?
-                       <span className='font-weight-bold'>Register in here</span>
+                       <span className='font-weight-bold'>Login in here</span>
                        
                 </Link>
                 
@@ -91,8 +91,9 @@ class SignUp extends Component {
                 </div>
 
                 
-
+                    <Link to="/verification">
                 <button type="submit" className="btn btn-blue btn-lg btn-block">Contiue</button>
+                </Link>
             </form>
             
                         
