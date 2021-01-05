@@ -8,23 +8,19 @@ import ReactCodeInput from 'react-verification-code-input';
 
 
 class Verification  extends Component {
-    state = {  }
-
-
-
-
-
-
+ 
     
     render() { 
         return (
 
             <VerificationWrapper >
-            <div className="container px-4 py-5 mx-auto">
+            <div className=" px-4 py-5 mx-auto">
     <div className="card card0">
         <div className="d-flex flex-lg-row flex-column-reverse">
             <div className="card card1"  style={{
-            backgroundImage: `url(${login}) `,height:'auto'
+            backgroundImage: `url(${login}) `,height:'auto',backgroundSize:'cover',
+            overflow:'hidden',
+            position:'relative',
           }}>
 
 <div className='text-white justify-content-center my-5 mx-5 navbar-brand'>
@@ -57,13 +53,13 @@ class Verification  extends Component {
                 <div className="row justify-content-center my-auto">
                     <div className="col-md-8 col-10 my-5">
                     <div className="row justify-content-center px-3 mb-3"> </div>
-                        <h3 className=" text-left text-success heading">Verification</h3>
+                        <h3 className=" text-left text-success heading ">Verification</h3>
 
                         <div id="wrapper">
   <div id="dialog">
     <h6 className='text-success'>Please enter the 4-digit code sent to your Phone</h6>
     <div id="form">
-        < ReactCodeInput type='number' fields={4}/>
+        < ReactCodeInput type='number' fields={4} className=''/>
 
       <button className="btn btn-blue btn-embossed mx-5 my-5">Continue</button>
     </div>
@@ -132,7 +128,7 @@ input {
     border-radius: 5px;
     background-color: #1f3251;
     height: 50px;
-    width: 70%;
+    width: 50%;
     font-family: Montserrat;
     font-size: 21px;
     font-weight: 300;

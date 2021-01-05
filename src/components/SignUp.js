@@ -10,20 +10,31 @@ import avatar from '../assests/img/avatar.jpg';
 
 
 class SignUp extends Component {
-    state = {  }
+
+    
     render() { 
         return ( 
             <SignUpWrapper >
-            <div className="container px-4 py-5 mx-auto">
+                <section  style={{
+            width:'100%',
+            height:'200px'
+
+          }}>
+            <div className=" px-4 py-5 mx-auto">
     <div className="card card0">
         <div className="d-flex flex-lg-row flex-column">
             <div className="card card1"  style={{
-            backgroundImage: `url(${login}) `,height:'auto'
+            backgroundImage: `url(${login}) `,
+            backgroundSize:'cover',
+            overflow:'hidden',
+            position:'relative',
+
           }}>
 
             <div className='text-white justify-content-center my-5 mx-5 navbar-brand'>
               <Link to='/'>
-                    <img src={avatar}
+                    <img
+                    src={avatar}
                      alt='logo'
                      height={20}
                      width={150}
@@ -107,6 +118,7 @@ class SignUp extends Component {
         
     </div>
 </div>
+</section>
             
             </SignUpWrapper>
          );
@@ -115,7 +127,8 @@ class SignUp extends Component {
 
 const SignUpWrapper = styled.div`
 
-}
+
+
 input,
 textarea {
     background-color: #F3E5F5;
@@ -164,7 +177,7 @@ button:focus {
 
 .card1 {
     width: 100%;
-    background-image: linear-gradient(to right, #FFD54F, #D500F9)
+    background-image: linear-gradient(to right, #28a745, #28a745)
 }
 
 .btn-blue{

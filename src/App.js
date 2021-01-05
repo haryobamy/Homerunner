@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route, Link ,Redirect} from 'react-router-dom';
 
 
 import SignUp from './components/SignUp';
@@ -8,13 +7,14 @@ import Login from './components/Login';
 import ForgotPassword from './components/ForgotPassword';
 import LandingPage from './components/LandingPage';
 import Verification from './components/Verification';
+// import Welcome from './components/Welcome';
+import Dashboard from './Dashboard';
 
 function App() {
   return (
     <React.Fragment>
     <Router>
-     {/* <ExampleNavbar /> */}
-    {/* <LandingPageHeader /> */}
+
    
 
       <div className="auth-wrapper">
@@ -25,6 +25,10 @@ function App() {
             <Route path="/sign-up" component={SignUp} />
             <Route path="/forgot-password" component={ForgotPassword} />
             <Route path="/verification" component={Verification} />
+            {/* <Route path="/welcome" component={Welcome} /> */}
+            <Route path="/dashboard" component={Dashboard} />
+
+            {/* <Redirect from="/dashboard" to="/ http://localhost:3000/admin/dashboard" /> */}
           </Switch>
         </div>
       </div>

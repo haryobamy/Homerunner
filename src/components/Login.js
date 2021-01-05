@@ -6,7 +6,7 @@ import login from '../assests/img/login.jpg';
 import { MDBBtn, MDBCol, MDBIcon } from "mdbreact";
 import avatar from '../assests/img/avatar.jpg';
 
-import Navbar from './Navbar'
+
 
 
 // reactstrap components
@@ -41,11 +41,14 @@ class Login extends Component {
         <>
         
             <LoginWrapper >
-            <div className="container px-4 py-5 mx-auto">
+            <div className="px-4 py-5 mx-auto">
     <div className="card card0 overlay">
         <div className="d-flex flex-lg-row flex-column">
             <div className="card card1 "  style={{
-            backgroundImage: `url(${login}) `,height:'auto'
+            backgroundImage: `url(${login}) `,height:'auto',
+            backgroundSize:'cover',
+            overflow:'hidden',
+            position:'relative',
           }}>
               <div className='text-white justify-content-center my-5 mx-5 navbar-brand'>
               <Link to='www.homerunner.ng'>

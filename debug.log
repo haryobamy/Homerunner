@@ -1,0 +1,11 @@
+[0915/154115.747:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0915/154115.773:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\HP\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\fdef9983-a991-4deb-9ecf-32183a71df2f: The system cannot find the path specified. (0x3)
+[0915/154115.784:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\HP\AppData\Local\Google\Chrome\User Data\Crashpad\attachments\37a6cc3c-a7d6-4c7c-a542-b181b7117581: The system cannot find the path specified. (0x3)
+[1227/005703.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1227/005703.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1227/005703.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1227/005703.162:ERROR:process_reader_win.cc(123)] NtOpenThread: {Access Denied} A process has requested access to an object, but has not been granted those access rights. (0xc0000022)
+[1227/005703.728:ERROR:exception_snapshot_win.cc(99)] thread ID 16380 not found in process
+[1227/005703.728:ERROR:exception_snapshot_win.cc(99)] thread ID 16848 not found in process
+[1227/005703.728:ERROR:exception_snapshot_win.cc(99)] thread ID 6544 not found in process
+[1227/005703.728:ERROR:exception_snapshot_win.cc(99)] thread ID 8576 not found in process
