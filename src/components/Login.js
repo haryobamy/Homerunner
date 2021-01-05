@@ -43,7 +43,7 @@ class Login extends Component {
             <LoginWrapper >
             <div className="px-4 py-5 mx-auto">
     <div className="card card0 overlay">
-        <div className="d-flex flex-lg-row flex-column">
+        <div className="d-flex flex-lg-row flex-column">   
             <div className="card card1 "  style={{
             backgroundImage: `url(${login}) `,height:'auto',
             backgroundSize:'cover',
@@ -56,7 +56,7 @@ class Login extends Component {
                      alt='logo'
                      height={20}
                      width={150}
-                     />
+                     /> 
                 </Link>
                 <span>
                 |   Future For Living

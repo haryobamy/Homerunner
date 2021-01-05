@@ -8,7 +8,6 @@ import ForgotPassword from './components/ForgotPassword';
 import LandingPage from './components/LandingPage';
 import Verification from './components/Verification';
 // import Welcome from './components/Welcome';
-import Dashboard from './Dashboard';
 
 function App() {
   return (
@@ -26,7 +25,7 @@ function App() {
             <Route path="/forgot-password" component={ForgotPassword} />
             <Route path="/verification" component={Verification} />
             {/* <Route path="/welcome" component={Welcome} /> */}
-            <Route path="/dashboard" component={Dashboard} />
+            {/* <Route path="/dashboard" component={Dashboard} /> */}
 
             {/* <Redirect from="/dashboard" to="/ http://localhost:3000/admin/dashboard" /> */}
           </Switch>
