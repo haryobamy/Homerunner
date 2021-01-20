@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import '../../../dashboard/node_modules/bootstrap/dist/css/bootstrap.min.css';
 import styled from 'styled-components';
 import login from '../assests/img/login.jpg';
 import {Link} from 'react-router-dom';
